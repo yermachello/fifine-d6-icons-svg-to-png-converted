@@ -24,22 +24,16 @@ Huge icon libraries converted from _.svg_ to _.png_ to use as custom button icon
 <br/>
 
 ## Why this pack exists?
-Official icon packs presented in Fifine Control Deck are barely usable. Most of them are just random pictures or stolen packs, they have different unfitting icon resolutions ranging from 32x32 up to 500x500, some of them include _.gif_ versions even though D6 doesn't support _.gif_ playback on buttons, or even _.svg_ files which create a lot of artifacts when displayed on buttons. And most important — all of them are small collections of a couple of dozen of icons.<br/>
+I wanted all buttons on my D6 to look identical and functionally minimalistic, and this project achieves that by using huge experience of many talented teams that make gigantic icon packs and converting it into usable _.png_ files. All icons have consistent style, color, size, padding and format, so sometimes packs match pretty well between each other.<br/>
 <br/>
-I wanted all buttons on my D6 to look identical and functionally minimalistic, and this project achieves that by using huge experience of many talented teams that make gigantic icon packs and converting it into usable _.png_ files.
+Official icon packs presented in Fifine Control Deck are barely usable. Most of them are just random pictures or stolen packs, they have different unfitting icon resolutions ranging from 32x32 up to 500x500, some of them include _.gif_ versions even though D6 doesn't support _.gif_ playback on buttons, or even _.svg_ files which create a lot of artifacts when displayed on buttons. And most important — all of them are small collections of a couple of dozen of icons, and they lack icons for basic actions in Discord, OBS, Soundpad and all the other software you usually use with stream controllers.
 
 <br/>
 
-## How to make your own packs just like these?
-Using [ImageMagick](https://imagemagick.org/) you can manipulate images in bulk. After the ImageMagick installation you can get into the directory of your desired _.svg_ pack via **Windows PowerShell** and execute commands one by one.
-> [!IMPORTANT]
-> Basically all you need for icon to look the best as possible is:<br/>
-> • 100x100 resolution<br/>
-> • _.png_ files<br/>
-> • no transparency — black background does the best
-
+## How to make your own packs just like this one?
+Basically all you need for an icon to look the best as possible on D6 is: 100x100 resolution, _.png_ format, no transparency — black background does the best. This way there is no rescaling happening and no transparency artifacts. If you want to convert some other _.svg_ pack you can use [ImageMagick](https://imagemagick.org/). After you install it you can manipulate images in bulk using Windows PowerShell:
 > [!CAUTION]
-> Before any image manipulation make backups of your assets to avoid losing all of them
+> Before any image manipulations make backups of your assets to avoid losing them all
 
 1. Move into the destination folder with _.svg_ files<br/>
 `cd [svg-sources-path]`<br/>
