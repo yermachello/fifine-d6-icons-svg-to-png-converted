@@ -1,9 +1,7 @@
 # Fifine D6 Streamcontroller Icon Pack
-Huge icon libraries converted from `.svg` to `.png` to use as custom button icons on Fifine D6 Streamcontroller — more than 18k icons available in different colors fitting for any streamcontroller action.
+Huge icon libraries converted from `.svg` to `.png` to use as custom button icons on Fifine D6 Streamcontroller — more than 18k icons available in different colors fitting for any stream controller action.
 
-### Icon Libraries Used
-> 🛈 Libraries used are publicly available for download and have their licenses attached inside the pack
-
+## Icon Libraries Used
 > [!NOTE]
 > Libraries used are publicly available for download and have their licenses attached inside the pack
 
@@ -16,32 +14,43 @@ Huge icon libraries converted from `.svg` to `.png` to use as custom button icon
 | [HackerNoon's Pixel Icon Library](https://github.com/hackernoon/pixel-icon-library) | `pixeliconlibrary` | 450 | <a href="#"><img src="https://github.com/user-attachments/assets/55bfc76c-1ac0-497b-bddc-b6e51923ab4b" width="12" /></a> |
 | Custom Test Icons | `calibrations` | 17 | <a href="#"><img src="https://github.com/user-attachments/assets/a886ce98-983c-4975-9718-5d40aafbf1f1" width="12" /></a> |
 
-### How to use it with Fifine D6?
+<br/>
+
+## How to use it with Fifine D6?
 1. Download the pack and place it wherever you want
 2. Open Fifine Control Deck and then click on your desired button, then click on a cog below, context menu appears and then choose "Select Local File"
 3. Search images in the explorer window using asterisks **
 
-### Why this pack exists?
+<br/>
+
+## Why this pack exists?
 Official icon packs presented in Fifine Control Deck are barely usable: most of them are just random pictures or stolen packs, they have different unfitting icon resolutions ranging from 32x32 up to 500x500, included `.gif` versions even though D6 doesn't support `.gif` playback on buttons, and most important all of them are small collections of a couple of dozen of icons.
 Lack of icons is crucial buster in customization
 
-### How I made it?
+<br/>
+
+## How to make your own just like these?
 Using [ImageMagick](https://imagemagick.org/) you can manipulate images in bulk. After the ImageMagick installation you can get into the directory of your desired `.svg` pack via **Windows PowerShell** and execute commands one by one.
-1. Move into the destination folder with `.svg` files
-`cd *path*`
-2. Convert `.svg` to 100x100 `.png` file
-`magick mogrify -background none -density 1000x1000 -resize 100x100 -format png *.svg`
-3. Invert icons since most of them are black on transparent and we need white on black
-`magick mogrify -channel RGB -negate -format png *.png`
-4. Rescale the icon inside the picture to have some space
-`magick mogrify -scale 70x70 -gravity center -background black -extent 100x100 -format png *.png`
-5. Move only converted icons into other folder
-`move "[source-image-path]*.png" "[destination-image-path]"`
-Additionally:
-You can adjust brightness if icons weren't pure white of black to make them so
+> [!CAUTION]
+> Before any image manipulation make backups of your assets to avoid losing all of them
+
+1. Move into the destination folder with `.svg` files<br/>
+`cd [svg-sources-path]`<br/>
+2. Convert `.svg` to 100x100 `.png` file<br/>
+`magick mogrify -background none -density 1000x1000 -resize 100x100 -format png *.svg`<br/>
+3. Invert icons since most of them are black on transparent and we need white on black<br/>
+`magick mogrify -channel RGB -negate -format png *.png`<br/>
+4. Rescale the icon inside the picture to have some space<br/>
+`magick mogrify -scale 70x70 -gravity center -background black -extent 100x100 -format png *.png`<br/>
+5. Move only converted icons into other folder<br/>
+`move "[source-image-path]*.png" "[destination-image-path]"`<br/>
+Additionally:<br/>
+You can adjust brightness if icons weren't pure white or black color to make them so<br/>
 `magick mogrify -level 15%,100%,0.90 -format png *.png`
 
-### To do
-• Basic color variants for all monochrome icons in ~`materialdesign`~, `fluentui`, `boxicons`, `fontawesome`, `pixeliconlibrary` 
-• Desaturated variants for all multicolored icons in `fluentui\color`
-• Restructure source `fluentui` size system to eliminate repeating icons basing from size x24 to get more icons for conversion
+<br/>
+
+## To do
+• Basic color variants for all monochrome icons in ~`materialdesign`~, `fluentui`, `boxicons`, `fontawesome`, `pixeliconlibrary` <br/>
+• Desaturated variants for all multicolored icons in `fluentui\color`<br/>
+• Restructure source `fluentui` size system to eliminate repeating icons basing from size x24 to get more icons for conversion<br/>
