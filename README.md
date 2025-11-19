@@ -1,5 +1,5 @@
 # Fifine D6 Streamcontroller Icon Pack
-Huge icon libraries converted from `.svg` to `.png` to use as custom button icons on Fifine D6 Streamcontroller — more than 18k icons available in different colors fitting for any stream controller action.
+Huge icon libraries converted from _.svg_ to _.png_ to use as custom button icons on [Fifine D6 Streamcontroller](https://fifinemicrophone.com/products/fifine-ampligame-d6) — more than 18k icons available in different colors fitting for any stream controller action.
 
 ## Icon Libraries Used
 > [!NOTE]
@@ -19,33 +19,33 @@ Huge icon libraries converted from `.svg` to `.png` to use as custom button icon
 ## How to use it with Fifine D6?
 1. Download the pack and place it wherever you want
 2. Open Fifine Control Deck and then click on your desired button, then click on a cog below, context menu appears and then choose "Select Local File"
-3. Search images in the explorer window using asterisks **
+3. Search images in the explorer window using asterisks like `*folder*`
 
 <br/>
 
 ## Why this pack exists?
-Official icon packs presented in Fifine Control Deck are barely usable: most of them are just random pictures or stolen packs, they have different unfitting icon resolutions ranging from 32x32 up to 500x500, included `.gif` versions even though D6 doesn't support `.gif` playback on buttons, and most important all of them are small collections of a couple of dozen of icons.
+Official icon packs presented in Fifine Control Deck are barely usable: most of them are just random pictures or stolen packs, they have different unfitting icon resolutions ranging from 32x32 up to 500x500, included _.gif_ versions even though D6 doesn't support _.gif_ playback on buttons, and most important all of them are small collections of a couple of dozen of icons.
 Lack of icons is crucial buster in customization
 
 <br/>
 
 ## How to make your own just like these?
-Using [ImageMagick](https://imagemagick.org/) you can manipulate images in bulk. After the ImageMagick installation you can get into the directory of your desired `.svg` pack via **Windows PowerShell** and execute commands one by one.
+Using [ImageMagick](https://imagemagick.org/) you can manipulate images in bulk. After the ImageMagick installation you can get into the directory of your desired _.svg_ pack via **Windows PowerShell** and execute commands one by one.
 > [!CAUTION]
 > Before any image manipulation make backups of your assets to avoid losing all of them
 
-1. Move into the destination folder with `.svg` files<br/>
+1. Move into the destination folder with _.svg_ files<br/>
 `cd [svg-sources-path]`<br/>
-2. Convert `.svg` to 100x100 `.png` file<br/>
+2. Convert _.svg_ to 100x100 _.png_ file<br/>
 `magick mogrify -background none -density 1000x1000 -resize 100x100 -format png *.svg`<br/>
-3. Invert icons since most of them are black on transparent and we need white on black<br/>
+3. Invert colors since most of them are black color and we need them to be white color<br/>
 `magick mogrify -channel RGB -negate -format png *.png`<br/>
-4. Rescale the icon inside the picture to have some space<br/>
+4. Rescale the icon inside the picture to have some space and give it a black background<br/>
 `magick mogrify -scale 70x70 -gravity center -background black -extent 100x100 -format png *.png`<br/>
-5. Move only converted icons into other folder<br/>
+5. Move only converted icons into other folder for further use<br/>
 `move "[source-image-path]*.png" "[destination-image-path]"`<br/>
-Additionally:<br/>
-You can adjust brightness if icons weren't pure white or black color to make them so<br/>
+_Additionally:_<br/>
+_You can adjust brightness if icons weren't pure white or black color to make them so:_<br/>
 `magick mogrify -level 15%,100%,0.90 -format png *.png`
 
 <br/>
