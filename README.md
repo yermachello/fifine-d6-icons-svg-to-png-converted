@@ -1,7 +1,7 @@
 # Fifine D6 Streamcontroller Icon Pack
 Huge icon libraries converted from `.svg` to `.png` to use as custom button icons on Fifine D6 Streamcontroller — more than k icons available in different colors to any streamcontroller setup.
 ### Icon Libraries Used
-> Libraries used are publicly available and have their licenses attached inside the pack
+> Libraries used are publicly available for download and have their licenses attached inside the pack
 
 | Pack | Folder | Icons | Colors |
 | --- | --- | --- | --- |
