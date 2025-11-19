@@ -1,5 +1,5 @@
-# Fifine D6 Streamcontroller Icon Pack
-Huge icon libraries converted from _.svg_ to _.png_ to use as custom button icons on [Fifine D6 Streamcontroller](https://fifinemicrophone.com/products/fifine-ampligame-d6) — more than 18k icons available in different colors fitting for any stream controller action.
+# Fifine D6 Stream Controller Icon Pack
+Huge icon libraries converted from _.svg_ to _.png_ to use as custom button icons on [Fifine D6 Stream Controller](https://fifinemicrophone.com/products/fifine-ampligame-d6) — more than 18k icons available in different colors fitting for any stream controller action.
 
 ## Icon Libraries Used
 > [!NOTE]
@@ -20,18 +20,21 @@ Huge icon libraries converted from _.svg_ to _.png_ to use as custom button icon
 1. Download the pack and place it wherever you want
 2. Open Fifine Control Deck and then click on your desired button, then click on a cog below, context menu appears and then choose "Select Local File"
 3. Search images in the explorer window using asterisks like `*folder*`
+4. Done ✨
 
 <br/>
 
 ## Why this pack exists?
-I wanted all buttons on my D6 to look identical and functionally minimalistic, and this project achieves that by using huge experience of many talented teams that make gigantic icon packs and converting it into usable _.png_ files. All icons have consistent style, color, size, padding and format, so sometimes packs match pretty well between each other.<br/>
+I wanted all buttons on my D6 to look identical and functionally minimalistic, and this project achieves that by using huge experience of many talented teams that make gigantic icon packs and converting it into usable _.png_ files. All icons have consistent style, color, size, padding and format, so sometimes packs match pretty well between each other. Also this pack has color variations of basic white, red, green and blue to show different statuses on buttons.<br/>
 <br/>
-Official icon packs presented in Fifine Control Deck are barely usable. Most of them are just random pictures or stolen packs, they have different unfitting icon resolutions ranging from 32x32 up to 500x500, some of them include _.gif_ versions even though D6 doesn't support _.gif_ playback on buttons, or even _.svg_ files which create a lot of artifacts when displayed on buttons. And most important — all of them are small collections of a couple of dozen of icons, and they lack icons for basic actions in Discord, OBS, Soundpad and all the other software you usually use with stream controllers.
+Official icon packs presented in Fifine Control Deck are barely usable. Most of them are just random pictures or stolen packs, they have different unfitting icon resolutions ranging from 32x32 up to 500x500, some of them include _.gif_ versions even though D6 doesn't support _.gif_ playback on buttons, or even _.svg_ files which create artifacts when displayed on buttons. And most important — all of them are small collections of a couple of dozen of icons, and they lack icons for basic actions in Discord, OBS, Soundpad and all the other software you usually use with stream controllers.
 
 <br/>
 
 ## How to make your own packs just like this one?
-Basically all you need for an icon to look the best as possible on D6 is: 100x100 resolution, _.png_ format, no transparency — black background does the best. This way there is no rescaling happening and no transparency artifacts. If you want to convert some other _.svg_ pack you can use [ImageMagick](https://imagemagick.org/). After you install it you can manipulate images in bulk using Windows PowerShell:
+Basically all you need for an icon to look the best as possible on D6 is: 100x100 resolution, _.png_ format, no transparency — black background does the best. This way there is no rescaling happening and no transparency artifacts.<br/>
+<br/>
+If you want to convert some other _.svg_ pack you can use [ImageMagick](https://imagemagick.org/). After you install it you can manipulate images in bulk using Windows PowerShell:
 > [!CAUTION]
 > Before any image manipulations make backups of your assets to avoid losing them all
 
